@@ -6,7 +6,7 @@ namespace NancyMeetsSignalR
     {
         public HomeModule()
         {
-            Get["/"] = parameters => "Hello World";
+            Get["/"] = _ => "Hello World";
         }
     }
 }
