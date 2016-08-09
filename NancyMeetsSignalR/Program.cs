@@ -23,6 +23,7 @@ namespace NancyMeetsSignalR
     {
         public void Configuration(IAppBuilder app)
         {
+            app.MapSignalR();
             app.UseNancy(); 
         }
     }

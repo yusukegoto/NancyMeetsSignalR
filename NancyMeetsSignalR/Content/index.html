@@ -4,10 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <title>Index</title>
+    <link href="css/app.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Hi There!</h1>
+    <div class="container">
+        <input type="text" id="message" />
+        <input type="button" id="sendmessage" value="Send" />
+        <input type="hidden" id="displayname" />
+        <ul id="discussion"></ul>
+    </div>
 
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.signalR.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
